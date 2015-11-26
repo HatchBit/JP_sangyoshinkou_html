@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>localhost</title>
+<meta name="robots" content="INDEX,FOLLOW">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<!-- ※デフォルトのスタイル（style.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+<!-- ※タブレット用のスタイル（tablet.css） -->
+<!-- <link rel="stylesheet" media="all" type="text/css" href="css/tablet.css" /> -->
+<!-- ※スマートフォン用のスタイル（smart.css） -->
+<link rel="stylesheet" media="all" type="text/css" href="css/smart.css" />
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Fotorama -->
+<link rel="stylesheet" media="screen" type="text/css" href="js/fotorama-4.6.4/fotorama.css" />
+<script src="js/fotorama-4.6.4/fotorama.js" type="text/javascript"></script>
+
+<script>
+    $(function(){
+        
+        var w = $(window).width();
+        if (w <= 640){
+            $('.navline').hide();
+            $('.footernav').hide();
+        }
+        
+        $(".open").click(function(){
+            $(".navline").slideToggle();
+        });
+        $('.footeropen').click(function(){
+            $('.footernav').slideToggle();
+        })
+    })
+</script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="headline">
+                <div class="headlogo">
+                    <a href="index.html" id="headimage"><img src="images/sanshin-logo.png" alt="産業振興株式会社" width="333" height="63"></a>
+                </div>
+                <nav class="hmenu">
+                    <ul>
+                        <li class="sp_non"><a href="">サイトポリシー</a></li>
+                        <li class="sp_non"><a href="">お問い合わせ</a></li>
+                        <li class="sp_non"><a href="">サイトマップ</a></li>
+                    </ul>
+                </nav>
+                <div class="sp open tright">
+                    <button class="btn"><img src="images/menu_btn.png" alt="MENU" width="60"></button>
+                </div>
+            </div>
+            <div class="navline clear">
+                <nav class="gmenu">
+                    <ul>
+                        <li><a href="">企業情報</a></li>
+                        <li><a href="">事業案内</a></li>
+                        <li><a href="">事業拠点</a></li>
+                        <li><a href="">リクルート</a></li>
+                        <li><a href="">関連リンク</a></li>
+                        <li class="pc_non"><a href="">サイトポリシー</a></li>
+                        <li class="pc_non"><a href="">お問い合わせ</a></li>
+                        <li class="pc_non"><a href="">サイトマップ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="contents">
+            <!-- トップスライドショー -->
+            <section id="topslide">
+                <div class="fotorama" data-width="100%" data-ratio="960/360" data-loop="true" data-autoplay="4000">
+                    <div><a href="#slide1"><img src="images/slide1.jpg"></a></div>
+                    <div><a href="#slide2"><img src="images/slide2.jpg"></a></div>
+                    <div><a href="#slide3"><img src="images/slide3.jpg"></a></div>
+                </div>
+            </section>
+            <!-- 事業案内 -->
+            <section id="business" class="clear">
+                <div class="col-1-5 mr15" id="content01">
+                    <img src="images/top01.png" alt="top01">
+                </div>
+                <div class="col-1-5 mr15" id="content02">
+                    <img src="images/top02.png" alt="top02">
+                    <a href="">原料事業</a>
+                    <p>鉄スクラップの集荷・加工・備蓄事業</p>
+                </div>
+                <div class="col-1-5" id="content03">
+                    <img src="images/top03.png" alt="top03">
+                    <a href="">鋼材加工販売事業</a>
+                    <p>新日鐡住金（株）などで製造される鋼材の加工・販売</p>
+                </div>
+                <div class="col-1-5 mr15" id="content04">
+                    <img src="images/top04.png" alt="top04">
+                    <a href="">鋼材中継倉庫事業</a>
+                    <p>横浜港と仙台港における物流サービス</p>
+                </div>
+                <div class="col-1-5 mr15" id="content05">
+                    <img src="images/top05.png" alt="top05">
+                    <a href="">製鉄所構内請負い</a>
+                    <p>新日鐡住金（株）の各製鉄所で様々な仕事を担当</p>
+                </div>
+                <div class="col-1-5" id="content06">
+                    <img src="images/top06.png" alt="top06">
+                    <a href="">肥料事業</a>
+                    <p>鉄鋼スラグを肥料化し、全農を通じて販売</p>
+                </div>
+            </section>
+            <!-- ガイド -->
+            <section id="guide" class="clear">
+                <div class="banner">
+                    <a href=""><img src="images/nouryokuup.jpg" alt="nouryoku-up"></a>
+                </div>
+                <div class="col-1-4 mr15">
+                    <a href=""><img src="images/topcontents_01.jpg" alt="jigyoutenkai"></a>
+                </div>
+                <div class="col-1-4">
+                    <a href=""><img src="images/topcontents_02.jpg" alt="tetsusukurappu"></a>
+                </div>
+                <div class="col-1-4 mr15">
+                    <a href=""><img src="images/topcontents_03.jpg" alt="jinzaiikusei"></a>
+                </div>
+                <div class="col-1-4">
+                    <a href=""><img src="images/topcontents_04.jpg" alt="syatyougoaisatsu"></a>
+                </div>
+            </section>
+            <!-- ニュース -->
+            <section id="news" class="clear">
+                <div id="newshead">
+                    <h3>NEWS<small>最新情報</small></h3>
+                    <p class="backlink"><a href="">バックナンバーはこちらへ</a></p>
+                </div>
+                <div id="newscontents">
+                    <dl>
+                        <dt>2015年11月14日</dt>
+                        <dd>JAグループが発行した菜園雑誌「やさい畑2015冬号」に、肥料事業部が製造している肥料「Ｓ-ミネカル」について掲載されています。当雑誌は11月4日発売、一般書店から購入できます。掲載内容はこちらからアクセスください。</dd>
+                    </dl>
+                    <dl>
+                        <dt>2015年10月1日</dt>
+                        <dd>10月1日付グループ会社「飯沼金属株式会社」のホームページが開設されました。アドレスは</dd>
+                    </dl>
+                    <dl>
+                        <dt>2015年8月3日</dt>
+                        <dd>むろらん港まつり「室蘭ねりこみ」で最優秀賞受賞。7月25日北海道室蘭市で開催された「むろらん港まつり」のメーンイベントの一つ、「室蘭ねりこみ」に新日鐵住金㈱室蘭製鐵所及び協力会社連合の「チーム鐵人」のみこしが最優秀賞を獲得しました。「チーム鐵人」には当社室蘭事業所社員６名が参加しています。</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+        <footer class="clear">
+            <div class="sp footeropen tright">
+                <button class="btn"><img src="images/menu_btn.png" alt="MENU" width="60"></button>
+            </div>
+            <div class="footernav">
+                <div class="nav_1">
+                    <nav>
+                        <ul>
+                            <li class="lv1"><a href="">鉄鋼業と産業復興</a></li>
+                            <li class="lv1"><a href="">鉄スクラップとリサイクル</a></li>
+                            <li class="lv2"><a href="">人材育成の取り組み</a></li>
+                            <li class="lv2"><a href="">社長ご挨拶</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_2">
+                    <nav>
+                        <ul>
+                            <li class="lv2"><a href="">企業情報</a></li>
+                            <li class="lv3"><a href="">企業理念</a></li>
+                            <li class="lv3"><a href="">会社基本情報</a></li>
+                            <li class="lv3"><a href="">機構・役員</a></li>
+                            <li class="lv3"><a href="">会社業績</a></li>
+                            <li class="lv3"><a href="">沿革</a></li>
+                            <li class="lv3"><a href="">社名の由来</a></li>
+                            <li class="lv3"><a href="">ISO14001・許可</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_3">
+                    <nav>
+                        <ul>
+                            <li class="lv2"><a href="">事業案内</a></li>
+                            <li class="lv3"><a href="">原料事業</a></li>
+                            <li class="lv3"><a href="">鋼材加工販売事業</a></li>
+                            <li class="lv3"><a href="">鋼材中継倉庫事業</a></li>
+                            <li class="lv3"><a href="">製鉄所構内請負い</a></li>
+                            <li class="lv3"><a href="">肥料事業</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_4">
+                    <nav>
+                        <ul>
+                            <li class="lv2"><a href="">拠点情報</a></li>
+                            <li class="lv3"><a href="">原料事業</a></li>
+                            <li class="lv3"><a href="">鋼材加工販売・鋼材中継倉庫・肥料事業</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav_5">
+                    <nav>
+                        <ul>
+                            <li class="lv2"><a href="">リクルート</a></li>
+                            <li class="lv3"><a href="">総合職採用情報</a></li>
+                            <li class="lv3"><a href="">技能職採用情報</a></li>
+                            <li class="lv3"><a href="">先輩の声</a></li>
+                            <li class="lv3"><a href="">リンク</a></li>
+                            <li class="lv3"><a href="">サイトポリシー</a></li>
+                            <li class="lv3"><a href="">お問い合わせ</a></li>
+                            <li class="lv3"><a href="">サイトマップ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footercopy">
+                <hr>
+                <p class="copyright">copyright © 2016 The Sangyo Shinko Co.,Ltd.</p>
+            </div>
+            <div class="clear"></div>
+        </footer>
+    </div>
+</body>
+</html>
