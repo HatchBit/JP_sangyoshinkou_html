@@ -21,7 +21,7 @@ hr {
 }
 #container{
     width:100%;
-    
+    overflow: hidden;
 }
 
 .pc { display: none; }
