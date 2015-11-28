@@ -82,9 +82,11 @@ hr {
 header {
     border-top: 4px solid #6D0073;
     background-color: #ffffff;
+    margin-bottom: 20px;
 }
 header .headline {
     width: 960px;
+    height: 70px;
     margin: 0 auto;
     padding: 0;
 }
@@ -122,7 +124,7 @@ header .headline .headlogo {
 .hmenu a {
     text-decoration: none;
     font-weight: bold;
-    color: #666666;
+    color: #232323;
 }
 .hmenu a:hover {
     color: #6D0073;
@@ -134,12 +136,13 @@ header .headline .headlogo {
     background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(233,233,233,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(233,233,233,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-9 */
+    border-top: 2px solid #dadada;
 }
 .gmenu {
     display: block;
     width: 960px;
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 0;
 }
 .gmenu ul {
     margin: 0;
@@ -163,17 +166,20 @@ header .headline .headlogo {
 .gmenu li a {
     display: inline-block;
     width: 188.6px;
-    height: 52px;
+    height: 37px;
     float: left;
     text-align: center;
     font-size: 18px;
     padding-top: 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #666666;
+    color: #232323;
 }
 .gmenu li a:hover {
-    background-color: #6D0073;
+    background: -moz-linear-gradient(top,  rgba(47,47,47,0) 0%, rgba(35,35,35,1) 0%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(47,47,47,0) 0%,rgba(35,35,35,1) 0%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(47,47,47,0) 0%,rgba(35,35,35,1) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f2f2f', endColorstr='#232323',GradientType=0 ); /* IE6-9 */
     color: #ffffff;
 }
 /* ------------------------------
@@ -238,7 +244,7 @@ footer {
     text-indent: -1em;
 }
 .footercopy {
-    
+    font-size: 12px;
 }
 .copyright {
     color: #ffffff;
